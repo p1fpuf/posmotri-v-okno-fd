@@ -90,6 +90,7 @@ ol {
 }
 
 .content__list-container {
+  width: 399px;
   height: 298px;
   overflow: auto;
 }
@@ -100,13 +101,31 @@ ol {
   gap: 30px;
 }
 
+.content__list-item {
+  width: 100%;
+}
+
 .content__details {
   width: 399px;
   grid-area: details;
 }
 
 .title {
+  font-family: Oswald;
   padding-bottom: 26px;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: #545050;
 }
 
 .content__video-card {
@@ -123,5 +142,40 @@ ol {
 }
 
 .content__video-card-description-container {
+  width: 100%;
   flex-grow: 1;
+  overflow: hidden;
+}
+
+.search-form__fieldset-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.content__video-card-title {
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16.2px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
 }

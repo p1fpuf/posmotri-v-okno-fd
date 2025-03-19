@@ -19,9 +19,10 @@
         <form class="search-form">
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Город</h2>
-            <label class="search-form__label">
+            <label class="search-form__label" for="city_input">
               <span class="search-form__label-text visually-hidden">Город</span>
               <input
+                id="city_input"
                 type="text"
                 placeholder="Санкт Петербург, например"
                 name="city"
@@ -32,8 +33,9 @@
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Время суток</h2>
             <div class="search-form__checkbox-list">
-              <label class="search-form__label">
+              <label class="search-form__label" for="morning_input">
                 <input
+                  id="morning_input"
                   type="checkbox"
                   name="time"
                   value="morning"
@@ -42,8 +44,9 @@
                 <span class="search-form__pseudo-checkbox"></span>
                 <span class="search-form__label-text">Утро</span>
               </label>
-              <label class="search-form__label">
+              <label class="search-form__label" for="afternoon_input">
                 <input
+                  id="afternoon_input"
                   type="checkbox"
                   name="time"
                   value="afternoon"
@@ -52,8 +55,9 @@
                 <span class="search-form__pseudo-checkbox"></span>
                 <span class="search-form__label-text">День</span>
               </label>
-              <label class="search-form__label">
+              <label class="search-form__label" for="night_input">
                 <input
+                  id="night_input"
                   type="checkbox"
                   name="time"
                   value="night"

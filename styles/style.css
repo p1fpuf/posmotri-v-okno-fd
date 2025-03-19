@@ -151,6 +151,7 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
+  padding-bottom: 5px;
 }
 
 .content__card-link {
@@ -178,4 +179,75 @@ ol {
   -webkit-line-clamp: 3;
   line-clamp: 3;
   overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+fieldset {
+  border: none;
+}
+
+.search-form__label {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: solid 1px #fff;
+  outline-offset: 1px;
+}
+
+.search-form__label:has(.search-form__textfield:active) {
+  outline: 1px solid #fff;
+  outline-offset: -1px;
+}
+
+.search-form__textfield {
+  width: 225px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 100%;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  appearance: none;
+  padding: 2.5px 0;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__pseudo-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  border: solid 1px #fff;
+}
+
+input[type='checkbox']:checked + .search-form__pseudo-checkbox::after {
+  content: "";
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
 }
